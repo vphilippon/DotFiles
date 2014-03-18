@@ -18,3 +18,8 @@ Notes
 
 * Existing files will be moved with a .bk extension.
 * Existing symbolic links will be removed
+
+## Thanks to… (even if some don't know me)
+
+* [Nicolas Lupien](https://github.com/niclupien)
+* [Mathias Bynens](https://github.com/mathiasbynens)
