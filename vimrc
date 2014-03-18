@@ -16,7 +16,6 @@ set nobackup                    " no backup-files like bla~
 set nowritebackup 
 
 " Set color on the line at pos 80
-" NOTE : Doesn't seem to work in my case...should look it up...
 let &colorcolumn=join(range(81,999),",")
 let &colorcolumn="80,".join(range(120,999),",")
 autocmd VimResized * wincmd = "automaticly resizes the splits when canvas changes
@@ -32,9 +31,10 @@ map <F8> :tabn<CR>
 """""""""""""""""""""""""""""
 " => Appearance options
 """""""""""""""""""""""""""""
+set background=dark
+se t_Co=256
 let g:solarized_termcolors=256
 colorscheme solarized
-set background=dark
 set number ruler
 set cursorline
 set antialias
