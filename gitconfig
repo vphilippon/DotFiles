@@ -23,6 +23,9 @@
   # Undo a `git push`
   undopush = push -f origin HEAD^:master
 
+[core]
+	editor = vim
+
 [color]
   # Use colors in Git commands that are capable of colored output when outputting to the terminal
   ui = auto
