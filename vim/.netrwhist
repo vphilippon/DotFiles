@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/vincent/.minecraft'
+let g:netrw_dirhist_2='/etc/X11/Xreset.d'
+let g:netrw_dirhist_3='/var/log/lightdm'
+let g:netrw_dirhist_4='/etc/apt/sources.list.d'
+let g:netrw_dirhist_5='/home/vincent/Dropbox/UdeS_VP/Session3/IFT320/TP4/nachos/code/filesys/test'
+let g:netrw_dirhist_6='/home/vincent/Dropbox/UdeS_VP/Session3_2/IFT630/TP2/1_a_MPI_Matrice/mpich2-sparc'
+let g:netrw_dirhist_7='/etc/X11/xinit'
+let g:netrw_dirhist_8='/home/vincent/.config/gedit'
