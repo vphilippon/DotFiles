@@ -3,7 +3,7 @@
 " Indentation
 set autoindent
 set cindent
-set shiftwidth=2
+set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
 set expandtab
 
 " Commenting
