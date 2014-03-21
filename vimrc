@@ -73,6 +73,7 @@ set wildignore+=*.o,*.obj,.git,.svn,*.class,*.jasper,*.swp,target/*
 """"""""""""""""""""""""""""""""""
 " Set YouCompleteMe settings
 """"""""""""""""""""""""""""""""""
+set completeopt=menuone
 let g:ycm_extra_conf_globlist = ['~/Projects/*']
 
 
