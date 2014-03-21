@@ -18,7 +18,9 @@ set wildmenu                    " Show matching filenames with tab key
 set nobackup                    " no backup-files like bla~ 
 set nowritebackup 
 
+""""""""""""""""""""""""""""""""""
 " Set color on the line at pos 80
+""""""""""""""""""""""""""""""""""
 let &colorcolumn=join(range(81,999),",")
 let &colorcolumn="80,".join(range(120,999),",")
 autocmd VimResized * wincmd = "automaticly resizes the splits when canvas changes
@@ -30,6 +32,9 @@ let mapleader = ","
 let g:mapleader = ","
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
+set switchbuf=usetab,newtab
+nnoremap <F5> :sbprevious<CR>
+nnoremap <F6> :sbnext<CR>
 
 """""""""""""""""""""""""""""
 " => Appearance options
@@ -45,7 +50,6 @@ set antialias
 """""""""""""""""""""""""""""
 " => Text, tabs and indent
 """""""""""""""""""""""""""""
-
 set wrap                        " don't wrap lines
 set linebreak
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
@@ -65,6 +69,12 @@ set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
 set wildignore+=*.o,*.obj,.git,.svn,*.class,*.jasper,*.swp,target/*
+
+""""""""""""""""""""""""""""""""""
+" Set YouCompleteMe settings
+""""""""""""""""""""""""""""""""""
+let g:ycm_extra_conf_globlist = ['~/Projects/*']
+
 
 " Let zen coding use tabs
 let g:user_zen_settings = { 'html' : { 'indentation' : '  ' }, }
