@@ -1,9 +1,6 @@
-[user]
-  name = vphilippon
-  email = vincent.philippon@usherbrooke.ca
-
-[credential]
-  helper = cache --timeout=3600
+[include]
+  # For username / creds / etc
+  path = ~/.gitconfig.local
 
 [alias]
   # View the SHA, description, and history graph of the latest 20 commits

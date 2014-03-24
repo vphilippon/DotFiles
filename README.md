@@ -2,6 +2,8 @@ DotFiles
 ========
 
 My Dotfiles highly inspired of others Dotfiles, which were highly inspired of others Dotfiles, and so on.
+Lots of personnal setting you'll have to fix (directorys, git info, etc.).
+Be carefull if you intend to install it.
 
 Current track of dotfiles :
 * Vim

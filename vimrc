@@ -17,6 +17,7 @@ set si                          " Smart indent
 set wildmenu                    " Show matching filenames with tab key
 set nobackup                    " no backup-files like bla~ 
 set nowritebackup 
+set hidden                      " Hide buffer instead of closing it
 
 """"""""""""""""""""""""""""""""""
 " Set color on the line at pos 80
@@ -30,11 +31,17 @@ autocmd VimResized * wincmd = "automaticly resizes the splits when canvas change
 """""""""""""""""""""""""""""
 let mapleader = ","
 let g:mapleader = ","
+" Navigation
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
-set switchbuf=usetab,newtab
 nnoremap <F5> :sbprevious<CR>
 nnoremap <F6> :sbnext<CR>
+set switchbuf=usetab,newtab
+
+" Utilities
+set pastetoggle=<F2>
+nmap <silent> ,/ :nohlsearch<CR>
+nnoremap ; :
 
 """""""""""""""""""""""""""""
 " => Appearance options
@@ -74,8 +81,5 @@ set wildignore+=*.o,*.obj,.git,.svn,*.class,*.jasper,*.swp,target/*
 " Set YouCompleteMe settings
 """"""""""""""""""""""""""""""""""
 set completeopt=menuone
-let g:ycm_extra_conf_globlist = ['~/Projects/*']
+let g:ycm_extra_conf_globlist = ['~/Projects/*'] " Set to your owns if needed.
 
-
-" Let zen coding use tabs
-let g:user_zen_settings = { 'html' : { 'indentation' : '  ' }, }
