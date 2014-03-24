@@ -38,6 +38,11 @@ nnoremap <F5> :sbprevious<CR>
 nnoremap <F6> :sbnext<CR>
 set switchbuf=usetab,newtab
 
+" NERDTree(Tab)
+map <Leader>m <plug>NERDTreeTabsToggle<CR>
+map <Leader>n <plug>NERDTreeSteppedOpen<CR>
+map <Leader>b <plug>NERDTreeSteppedClose<CR>
+
 " Utilities
 set pastetoggle=<F2>
 nmap <silent> ,/ :nohlsearch<CR>
