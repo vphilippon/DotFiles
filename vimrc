@@ -10,6 +10,7 @@ syntax enable
 syntax sync fromstart
 set encoding=utf8
 set fileencoding=utf8
+set termencoding=utf8
 set showcmd                     " Display commands information
 filetype plugin indent on       " Load file type plugins + indentation
 set ai                          " Auto indent
@@ -58,6 +59,7 @@ colorscheme solarized
 set number ruler
 set cursorline
 set antialias
+let g:Powerline_symbols = 'fancy'
 
 """""""""""""""""""""""""""""
 " => Text, tabs and indent
