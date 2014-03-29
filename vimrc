@@ -19,6 +19,7 @@ set wildmenu                    " Show matching filenames with tab key
 set nobackup                    " no backup-files like bla~ 
 set nowritebackup 
 set hidden                      " Hide buffer instead of closing it
+set tabpagemax=20               " Increade max number of tabs to 20
 
 """"""""""""""""""""""""""""""""""
 " Set color on the line at pos 80
@@ -43,6 +44,9 @@ set switchbuf=usetab,newtab
 map <Leader>m <plug>NERDTreeTabsToggle<CR>
 map <Leader>n <plug>NERDTreeSteppedOpen<CR>
 map <Leader>b <plug>NERDTreeSteppedClose<CR>
+
+" YouCompleteMe
+nnoremap <leader>jd :YcmCompleter GoTo<CR>
 
 " Utilities
 set pastetoggle=<F2>
@@ -87,6 +91,8 @@ set wildignore+=*.o,*.obj,.git,.svn,*.class,*.jasper,*.swp,target/*
 """"""""""""""""""""""""""""""""""
 " Set YouCompleteMe settings
 """"""""""""""""""""""""""""""""""
-set completeopt=menuone
+let g:ycm_add_preview_to_completeopt = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_goto_buffer_command = 'new-tab'
 let g:ycm_extra_conf_globlist = ['~/Projects/*'] " Set to your owns if needed.
 
