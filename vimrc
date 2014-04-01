@@ -111,3 +111,13 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_goto_buffer_command = 'new-tab'
 let g:ycm_extra_conf_globlist = ['~/Projects/*'] " Set to your owns if needed.
 
+""""""""""""""""""""""""""""""""""
+" Set vim-session settings
+""""""""""""""""""""""""""""""""""
+" you also need to run :SaveSession once to create the default.vim session that
+" will then be autoloaded/saved from then on
+
+let g:session_autoload        = 'yes'
+let g:session_autosave        = 'yes'
+let g:session_default_to_last = 'yes'
+let g:session_directory       = '~/tmp/vim/sessions'
