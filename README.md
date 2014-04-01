@@ -31,3 +31,4 @@ Notes
 * [Nicolas Lupien](https://github.com/niclupien)
 * [Mathias Bynens](https://github.com/mathiasbynens)
 * [cabouffard](https://github.com/cabouffard)
+* [Valloric](https://github.com/Valloric)
