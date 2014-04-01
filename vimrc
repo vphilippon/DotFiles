@@ -20,6 +20,16 @@ set nobackup                    " no backup-files like bla~
 set nowritebackup 
 set hidden                      " Hide buffer instead of closing it
 set tabpagemax=20               " Increade max number of tabs to 20
+set iskeyword+=_,$,@,%,#        " None of these should be word dividers
+
+" Not sure it's fixing, but I'll see over time...Thanks Valoric!
+if v:version >= 704
+  " The new Vim regex engine is currently slooooow as hell which makes syntax
+  " highlighting slow, which introduces typing latency.
+  " Consider removing this in the future when the new regex engine becomes
+  " faster.
+  set regexpengine=1
+endif
 
 """"""""""""""""""""""""""""""""""
 " Set color on the line at pos 80
@@ -46,11 +56,12 @@ map <Leader>n <plug>NERDTreeSteppedOpen<CR>
 map <Leader>b <plug>NERDTreeSteppedClose<CR>
 
 " YouCompleteMe
-nnoremap <leader>jd :YcmCompleter GoTo<CR>
+nnoremap <leader>y :YcmForceCompileAndDiagnostics<CR>
+noremap <leader>jd :YcmCompleter GoTo<CR>
 
 " Utilities
 set pastetoggle=<F2>
-nmap <silent> ,/ :nohlsearch<CR>
+nmap <silent> ,é :nohlsearch<CR>
 nnoremap ; :
 
 """""""""""""""""""""""""""""
@@ -77,8 +88,12 @@ set backspace=indent,eol,start  " backspace through everything in insert mode
 set smarttab
 set expandtab
 set virtualedit=block
-set clipboard+=unnamed          " Yanks go on clipboard
 set showmatch                   " Show matching braces
+if has('unnamedplus')           " Yanks go on clipboard Thanks Valoric.
+  set clipboard=unnamedplus,unnamed
+else
+  set clipboard+=unnamed
+endif
 
 " Searching
 set hlsearch                    " highlight matches
