@@ -8,3 +8,7 @@ set expandtab
 set smarttab
 set shiftround
 set nojoinspaces
+
+" Omnifunc and YCM setting
+setlocal omnifunc=necoghc#omnifunc
+let g:ycm_semantic_triggers = {'haskell' : ['.']}
