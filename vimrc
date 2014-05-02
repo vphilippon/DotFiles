@@ -19,7 +19,7 @@ set wildmenu                    " Show matching filenames with tab key
 set nobackup                    " no backup-files like bla~ 
 set nowritebackup 
 set hidden                      " Hide buffer instead of closing it
-set tabpagemax=20               " Increade max number of tabs to 20
+set tabpagemax=30               " Increade max number of tabs to 30
 set iskeyword+=_,$,@,%,#        " None of these should be word dividers
 
 " Not sure it's fixing, but I'll see over time...Thanks Valoric!
@@ -43,6 +43,7 @@ autocmd VimResized * wincmd = "automaticly resizes the splits when canvas change
 """""""""""""""""""""""""""""
 let mapleader = ","
 let g:mapleader = ","
+
 " Navigation
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
@@ -63,6 +64,7 @@ noremap <leader>jd :YcmCompleter GoTo<CR>
 set pastetoggle=<F2>
 nmap <silent> ,é :nohlsearch<CR>
 nnoremap ; :
+inoremap jj <ESC> 
 
 """""""""""""""""""""""""""""
 " => Appearance options
@@ -89,7 +91,7 @@ set smarttab
 set expandtab
 set virtualedit=block
 set showmatch                   " Show matching braces
-if has('unnamedplus')           " Yanks go on clipboard Thanks Valoric.
+if has('unnamedplus')           " Yanks go on clipboard, Thanks Valoric.
   set clipboard=unnamedplus,unnamed
 else
   set clipboard+=unnamed
@@ -116,7 +118,6 @@ let g:ycm_extra_conf_globlist = ['~/Projects/*'] " Set to your owns if needed.
 """"""""""""""""""""""""""""""""""
 " you also need to run :SaveSession once to create the default.vim session that
 " will then be autoloaded/saved from then on
-
 let g:session_autoload        = 'yes'
 let g:session_autosave        = 'yes'
 let g:session_default_to_last = 'yes'
