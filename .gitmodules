@@ -22,3 +22,6 @@
 [submodule "vim/bundle/vim-session"]
 	path = vim/bundle/vim-session
 	url = https://github.com/xolox/vim-session.git
+[submodule "vim/bundle/neco-ghc"]
+	path = vim/bundle/neco-ghc
+	url = https://github.com/eagletmt/neco-ghc.git

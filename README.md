@@ -8,6 +8,7 @@ Be carefull if you intend to install it.
 Current track of dotfiles :
 * Vim
 * Git
+* Ghci (Haskell)
 
 
 To install, clone this repository into ~/.dotifiles and cd into it :
@@ -31,3 +32,4 @@ Notes
 * [Nicolas Lupien](https://github.com/niclupien)
 * [Mathias Bynens](https://github.com/mathiasbynens)
 * [cabouffard](https://github.com/cabouffard)
+* [Val Markovic](https://github.com/Valloric)
