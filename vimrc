@@ -122,3 +122,10 @@ let g:session_autoload        = 'yes'
 let g:session_autosave        = 'yes'
 let g:session_default_to_last = 'yes'
 let g:session_directory       = '~/tmp/vim/sessions'
+
+""""""""""""""""""""""""""""""""""
+" New filetype : JFlex
+""""""""""""""""""""""""""""""""""
+augroup filetype
+  au BufRead,BufNewFile *.flex,*.jflex    set filetype=jflex
+augroup END

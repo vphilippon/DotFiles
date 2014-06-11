@@ -10,5 +10,6 @@ set shiftround
 set nojoinspaces
 
 " Omnifunc and YCM setting
+let g:necoghc_enable_detailed_browse = 1
 setlocal omnifunc=necoghc#omnifunc
 let g:ycm_semantic_triggers = {'haskell' : ['.']}
