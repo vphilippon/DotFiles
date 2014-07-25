@@ -25,3 +25,6 @@
 [submodule "vim/bundle/neco-ghc"]
 	path = vim/bundle/neco-ghc
 	url = https://github.com/eagletmt/neco-ghc.git
+[submodule "vim/bundle/cscope"]
+	path = vim/bundle/cscope
+	url = https://github.com/brookhong/cscope.vim.git
