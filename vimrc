@@ -1,3 +1,19 @@
+"""""""""""""""""""
+" => Version check
+"""""""""""""""""""
+if v:version >= 704
+  " Not sure it's fixing, but I'll see over time...Thanks Valoric!
+  " The new Vim regex engine is currently slooooow as hell which makes syntax
+  " highlighting slow, which introduces typing latency.
+  " Consider removing this in the future when the new regex engine becomes
+  " faster.
+  set regexpengine=1
+else
+  " Disable YCM if we don't have Vim 7.4 or greater.
+  let g:pathogen_disabled=['YouCompleteMe']
+endif
+
+" Pathogen calls -- Plugin loading
 call pathogen#infect()
 call pathogen#helptags()
 
@@ -22,15 +38,6 @@ set hidden                      " Hide buffer instead of closing it
 set tabpagemax=30               " Increade max number of tabs to 30
 set iskeyword+=_,$,@,%,#        " None of these should be word dividers
 
-" Not sure it's fixing, but I'll see over time...Thanks Valoric!
-if v:version >= 704
-  " The new Vim regex engine is currently slooooow as hell which makes syntax
-  " highlighting slow, which introduces typing latency.
-  " Consider removing this in the future when the new regex engine becomes
-  " faster.
-  set regexpengine=1
-endif
-
 """"""""""""""""""""""""""""""""""
 " Set color on the line at pos 80
 """"""""""""""""""""""""""""""""""
@@ -53,12 +60,14 @@ set switchbuf=usetab,newtab
 
 " NERDTree(Tab)
 map <Leader>m <plug>NERDTreeTabsToggle<CR>
-map <Leader>n <plug>NERDTreeSteppedOpen<CR>
 map <Leader>b <plug>NERDTreeSteppedClose<CR>
 
 " YouCompleteMe
 nnoremap <leader>y :YcmForceCompileAndDiagnostics<CR>
 noremap <leader>jd :YcmCompleter GoTo<CR>
+
+" taglist
+map <Leader>n :TlistToggle<CR>
 
 " Utilities
 set pastetoggle=<F2>
@@ -70,13 +79,13 @@ inoremap jj <ESC>
 " => Appearance options
 """""""""""""""""""""""""""""
 set background=dark
-se t_Co=256
-let g:solarized_termcolors=256
+se t_Co=16
+let g:solarized_termcolors=16
 colorscheme solarized
 set number ruler
 set cursorline
 set antialias
-let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols='fancy'
 
 """""""""""""""""""""""""""""
 " => Text, tabs and indent
@@ -124,8 +133,22 @@ let g:session_default_to_last = 'yes'
 let g:session_directory       = '~/tmp/vim/sessions'
 
 """"""""""""""""""""""""""""""""""
+" Set taglist settings
+""""""""""""""""""""""""""""""""""
+let g:Tlist_Close_On_Select=1
+let g:Tlist_Exit_OnlyWindow=1
+let g:Tlist_GainFocus_On_ToggleOpen=1
+
+""""""""""""""""""""""""""""""""""
 " New filetype : JFlex
 """"""""""""""""""""""""""""""""""
 augroup filetype
   au BufRead,BufNewFile *.flex,*.jflex    set filetype=jflex
+augroup END
+
+""""""""""""""""""""""""""""""""""
+" New filetype : JavaCC
+""""""""""""""""""""""""""""""""""
+augroup filetype
+  au BufRead,BufNewFile *.jj,*.jcc    set filetype=javacc
 augroup END
