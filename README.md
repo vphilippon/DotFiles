@@ -13,13 +13,22 @@ Current track of dotfiles :
 
 To install, clone this repository into ~/.dotifiles and cd into it :
 
-    git clone --recursive http://github.com/vphilippon/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
+    git clone --recursive https://github.com/vphilippon/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
 
 Don't forget to add the `--recursive` option to get all the submodules used for vim plugins.
 
 Start the bash install script
 
     ./install.sh
+
+Make sure you have:
+-------------------
+* Vim 7.4 or greater with python support (YouCompleteMe)
+* A patched font for `fancy` powerline (vim-powerline)
+* The Solarized palette for your console emulator (vim-colors-solarized)
+* Ctags (taglist)
+* Cscope (cscope.vim)
+* ghc-mod (neco-ghc) (`cabal install ghc-mod`)
 
 Notes
 -----
@@ -31,5 +40,5 @@ Notes
 
 * [Nicolas Lupien](https://github.com/niclupien)
 * [Mathias Bynens](https://github.com/mathiasbynens)
-* [cabouffard](https://github.com/cabouffard)
+* [C-A Bouffard](https://github.com/cabouffard)
 * [Val Markovic](https://github.com/Valloric)
