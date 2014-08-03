@@ -22,10 +22,13 @@ call pathogen#helptags()
 """""""""""""""""""""""""""""
 set nocompatible                " Choose no compatibility with legacy vi
 set laststatus=2                " Always show the statusline
+set noshowmode                  " Don't show the mode ("-- INSERT --") at the bottom
 syntax enable
 syntax sync fromstart
 set encoding=utf8
 set fileencoding=utf8
+set fileformat=unix             " File mode is unix
+set fileformats=unix,dos,mac    " Detects unix, dos, mac file formats in that order
 set termencoding=utf8
 set showcmd                     " Display commands information
 filetype plugin indent on       " Load file type plugins + indentation
