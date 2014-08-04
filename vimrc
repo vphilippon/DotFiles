@@ -142,16 +142,3 @@ let g:Tlist_Close_On_Select=1
 let g:Tlist_Exit_OnlyWindow=1
 let g:Tlist_GainFocus_On_ToggleOpen=1
 
-""""""""""""""""""""""""""""""""""
-" New filetype : JFlex
-""""""""""""""""""""""""""""""""""
-augroup filetype
-  au BufRead,BufNewFile *.flex,*.jflex    set filetype=jflex
-augroup END
-
-""""""""""""""""""""""""""""""""""
-" New filetype : JavaCC
-""""""""""""""""""""""""""""""""""
-augroup filetype
-  au BufRead,BufNewFile *.jj,*.jcc    set filetype=javacc
-augroup END
