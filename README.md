@@ -30,11 +30,16 @@ Make sure you have:
 * Cscope (cscope.vim)
 * ghc-mod (neco-ghc) (`cabal install ghc-mod`)
 
-Notes
+Notes:
 -----
-
 * Existing files will be moved with a .bk extension.
 * Existing symbolic links will be removed
+
+Other interesting tools to have:
+--------------------------------
+* tmux
+* [jimeh/git-aware-prompt](https://github.com/jimeh/git-aware-prompt) (using bash)
+* [deadalnix/pixel-saver](https://github.com/deadalnix/pixel-saver) (using gnome)
 
 ## Thanks to… (even if some don't know me)
 
