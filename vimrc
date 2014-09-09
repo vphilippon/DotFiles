@@ -142,3 +142,9 @@ let g:Tlist_Close_On_Select=1
 let g:Tlist_Exit_OnlyWindow=1
 let g:Tlist_GainFocus_On_ToggleOpen=1
 
+""""""""""""""""""""""""""""""""""
+" Set python-mode settings
+""""""""""""""""""""""""""""""""""
+let g:pymode_rope_completion = 0
+let g:pymode_folding = 0
+
