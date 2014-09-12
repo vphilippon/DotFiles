@@ -40,6 +40,7 @@ Other interesting tools to have:
 * tmux
 * [jimeh/git-aware-prompt](https://github.com/jimeh/git-aware-prompt) (using bash)
 * [deadalnix/pixel-saver](https://github.com/deadalnix/pixel-saver) (using gnome)
+* git-up (python with pip)
 
 ## Thanks to… (even if some don't know me)
 
