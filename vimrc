@@ -44,7 +44,6 @@ set iskeyword+=_,$,@,%,#        " None of these should be word dividers
 """"""""""""""""""""""""""""""""""
 " Set color on the line at pos 80
 """"""""""""""""""""""""""""""""""
-let &colorcolumn=join(range(81,999),",")
 let &colorcolumn="80,".join(range(120,999),",")
 autocmd VimResized * wincmd = "automaticly resizes the splits when canvas changes
 
