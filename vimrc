@@ -65,11 +65,14 @@ map <Leader>m <plug>NERDTreeTabsToggle<CR>
 map <Leader>b <plug>NERDTreeSteppedClose<CR>
 
 " YouCompleteMe
-nnoremap <leader>y :YcmForceCompileAndDiagnostics<CR>
-noremap <leader>jd :YcmCompleter GoTo<CR>
+nnoremap <Leader>y :YcmForceCompileAndDiagnostics<CR>
+noremap <Leader>jd :YcmCompleter GoTo<CR>
 
 " taglist
 map <Leader>n :TlistToggle<CR>
+
+" indentLine
+nnoremap <Leader>ig :IndentLinesToggle<CR>
 
 " Utilities
 set pastetoggle=<F2>
@@ -149,3 +152,7 @@ let g:pymode_folding = 0
 let g:pymode_lint_cwindow = 0
 let g:pymode_trim_whitespaces = 0
 
+""""""""""""""""""""""""""""""""""
+" Set indentLine settings
+""""""""""""""""""""""""""""""""""
+let g:indentLine_char = '┊'
