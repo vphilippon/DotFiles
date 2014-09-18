@@ -38,7 +38,7 @@ set wildmenu                    " Show matching filenames with tab key
 set nobackup                    " no backup-files like bla~ 
 set nowritebackup 
 set hidden                      " Hide buffer instead of closing it
-set tabpagemax=30               " Increade max number of tabs to 30
+set tabpagemax=40               " Increade max number of tabs to 40
 set iskeyword+=_,$,@,%,#        " None of these should be word dividers
 
 """"""""""""""""""""""""""""""""""
