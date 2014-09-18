@@ -3,6 +3,7 @@
 alias v='vim -p'
 alias vip='vim -p'
 alias t='TERM=xterm-256color tmux -2'
+alias dotUpdate='git submodule foreach git pull origin master --recurse-submodules'
 
 #---- Job ----
 
