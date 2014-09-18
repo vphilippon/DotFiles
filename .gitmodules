@@ -1,63 +1,63 @@
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-  branch = master
+	branch = master
 [submodule "vim/bundle/nerdcommenter"]
 	path = vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
-  branch = master
+	branch = master
 [submodule "vim/bundle/YouCompleteMe"]
 	path = vim/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
-  branch = master
+	branch = master
   ignore = dirty   ;No more untracked...
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-  branch = master
+	branch = master
 [submodule "vim/bundle/vim-nerdtree-tabs"]
 	path = vim/bundle/vim-nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
-  branch = master
+	branch = master
 [submodule "vim/bundle/vim-powerline"]
 	path = vim/bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
-  branch = develop
+	branch = develop
 [submodule "vim/bundle/vim-misc"]
 	path = vim/bundle/vim-misc
 	url = https://github.com/xolox/vim-misc.git
-  branch = master
+	branch = master
 [submodule "vim/bundle/vim-session"]
 	path = vim/bundle/vim-session
 	url = https://github.com/xolox/vim-session.git
-  branch = master
+	branch = master
 [submodule "vim/bundle/neco-ghc"]
 	path = vim/bundle/neco-ghc
 	url = https://github.com/eagletmt/neco-ghc.git
-  branch = master
+	branch = master
 [submodule "vim/bundle/cscope"]
 	path = vim/bundle/cscope
 	url = https://github.com/brookhong/cscope.vim.git
-  branch = master
+	branch = master
 [submodule "vim/bundle/vim-fugitive"]
 	path = vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-  branch = master
+	branch = master
 [submodule "vim/bundle/indentLine"]
 	path = vim/bundle/indentLine
 	url = https://github.com/Yggdroot/indentLine.git
-  branch = master
+	branch = master
 [submodule "vim/bundle/ingo-library"]
 	path = vim/bundle/ingo-library
 	url = https://github.com/vim-scripts/ingo-library.git
-  branch = master
+	branch = master
   ignore = dirty   ;No more untracked...
 [submodule "vim/bundle/EnhancedJumps"]
 	path = vim/bundle/EnhancedJumps
 	url = https://github.com/vim-scripts/EnhancedJumps.git
-  branch = master
+	branch = master
   ignore = dirty   ;No more untracked...
 [submodule "vim/bundle/python-mode"]
 	path = vim/bundle/python-mode
 	url = https://github.com/vphilippon/python-mode.git
-  branch = job
+	branch = job
