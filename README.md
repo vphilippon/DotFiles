@@ -23,6 +23,9 @@ Start the bash install script
 
     ./install.sh
 
+To add new submodule (with branch tracking), follow this:
+  [http://stackoverflow.com/a/18799234](http://stackoverflow.com/a/18799234)
+
 Make sure you have:
 -------------------
 * Vim 7.4 or greater with python support (YouCompleteMe)

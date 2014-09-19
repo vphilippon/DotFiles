@@ -61,3 +61,7 @@
 	path = vim/bundle/python-mode
 	url = https://github.com/vphilippon/python-mode.git
 	branch = job
+[submodule "vim/bundle/ultisnips"]
+	path = vim/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+	branch = master
