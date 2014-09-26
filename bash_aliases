@@ -8,6 +8,7 @@ alias dotUpdate='git submodule foreach git pull --recurse-submodules'
 #---- Job ----
 
 alias wb='workon bfox'
+alias wg='workon gitbuildhooks'
 
 alias bfox_run='hserve.py -c ~/conf/bfox/bfox_prod_tst_vphilippon.conf'
 

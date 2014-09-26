@@ -105,7 +105,7 @@ set smarttab
 set expandtab
 set virtualedit=block
 set showmatch                   " Show matching braces
-if has('unnamedplus')           " Yanks go on clipboard, Thanks Valoric.
+if has('unnamedplus')           " Yanks go on clipboard, Need +clipboard
   set clipboard=unnamedplus,unnamed
 else
   set clipboard+=unnamed
@@ -156,3 +156,11 @@ let g:pymode_trim_whitespaces = 0
 " Set indentLine settings
 """"""""""""""""""""""""""""""""""
 let g:indentLine_char = '┊'
+
+""""""""""""""""""""""""""""""""""
+" Set UltiSnips settings
+""""""""""""""""""""""""""""""""""
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
