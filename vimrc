@@ -76,7 +76,7 @@ nnoremap <Leader>ig :IndentLinesToggle<CR>
 
 " Utilities
 set pastetoggle=<F2>
-nmap <silent> ,é :nohlsearch<CR>
+nmap <silent> ,/ :nohlsearch<CR>
 nnoremap ; :
 inoremap jj <ESC> 
 
@@ -117,7 +117,7 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
-set wildignore+=*.o,*.obj,.git,.svn,*.class,*.jasper,*.swp,target/*
+set wildignore+=*.o,*.obj,.git,.svn,*.class,*.jasper,*.swp,*.pyc,target/*
 
 """"""""""""""""""""""""""""""""""
 " Set YouCompleteMe settings
