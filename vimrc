@@ -156,6 +156,7 @@ let g:pymode_lint_cwindow = 0
 let g:pymode_trim_whitespaces = 0
 let g:pymode_options_max_line_length = 100  " Job setting
 "let g:pymode_lint_ignore = "E128,E231,E265,E261,W391" " Job setting
+let g:pymode_lint_ignore = "W391" " Job setting
 
 """"""""""""""""""""""""""""""""""
 " Set indentLine settings
