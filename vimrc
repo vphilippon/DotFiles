@@ -81,7 +81,7 @@ nnoremap <Leader>u :PymodeLint<CR>
 set pastetoggle=<F2>
 nmap <silent> ,/ :nohlsearch<CR>
 nnoremap ; :
-inoremap jj <ESC> 
+inoremap jj <ESC>
 
 """""""""""""""""""""""""""""
 " => Appearance options
