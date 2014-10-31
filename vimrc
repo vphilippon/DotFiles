@@ -148,6 +148,11 @@ let g:Tlist_Exit_OnlyWindow=1
 let g:Tlist_GainFocus_On_ToggleOpen=1
 
 """"""""""""""""""""""""""""""""""
+" Set NERDCommenter settings
+""""""""""""""""""""""""""""""""""
+let g:NERDCustomDelimiters = {'python': {'left': '# ', 'leftAlt': '#'}}
+
+""""""""""""""""""""""""""""""""""
 " Set python-mode settings
 """"""""""""""""""""""""""""""""""
 let g:pymode_rope_completion = 0
