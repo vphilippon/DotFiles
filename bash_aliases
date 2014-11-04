@@ -17,6 +17,7 @@ alias bfox_run='hserve.py -c ~/conf/bfox/bfox_prod_tst_vphilippon.conf'
 
 alias sync-inv-tst='rsync -a --delete --progress --exclude=/log --exclude=/spool --exclude=/webq --exclude=/templates --exclude=/venueMaps --exclude=/venueMapsXML vphilippon@bfox.prod.tst:/var/opt/outbox/tst/ ~/data/inv/tst/'
 
+# Deprecated, prefer git-up
 function hubsync()
 {
     branch=${1-master}
@@ -41,9 +42,10 @@ function pr(){
   browser=google-chrome
   delay=3
   repo=`git remote -v | head -n1 | awk '{print $2}' | sed -e 's,.*:\(.*/\)\?,,' -e 's/\.git$//'`
+  owner=`git remote -v | grep upstream | head -n1 | awk '{print $2}' | sed -e 's,.*/\(.*\)/.*\.git$,\1,'`
   curbranch=`git rev-parse --abbrev-ref HEAD`
   if git push origin $curbranch; then
     sleep $delay
-    $browser "https://github.outboxtechnology.com/`whoami`/$repo/compare/outbox:$1...$curbranch?expand=1"
+    $browser "https://github.outboxtechnology.com/`whoami`/$repo/compare/$owner:$1...$curbranch?expand=1"
   fi
 }
