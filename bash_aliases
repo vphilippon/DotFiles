@@ -4,11 +4,14 @@ alias v='vim -p'
 alias vip='vim -p'
 alias t='TERM=xterm-256color tmux -2'
 alias dotUpdate='git submodule foreach git pull --recurse-submodules && git submodule update --init --recursive'
+alias cd..='cd ..'
+alias cd.='cd ..'
 
 #---- Job ----
 
 alias wb='workon bfox'
 alias wg='workon gitbuildhooks'
+alias wt='workon email-template'
 
 alias bfox_run='hserve.py -c ~/conf/bfox/bfox_prod_tst_vphilippon.conf'
 

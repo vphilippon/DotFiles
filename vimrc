@@ -64,6 +64,9 @@ set switchbuf=usetab,newtab
 map <Leader>m <plug>NERDTreeTabsToggle<CR>
 map <Leader>b <plug>NERDTreeSteppedClose<CR>
 
+" vim-session
+nnoremap <Leader>o :OpenSession<CR>
+
 " YouCompleteMe
 nnoremap <Leader>y :YcmForceCompileAndDiagnostics<CR>
 noremap <Leader>jd :YcmCompleter GoTo<CR>
@@ -137,7 +140,7 @@ let g:ycm_extra_conf_globlist = ['~/Projects/*'] " Set to your owns if needed.
 " will then be autoloaded/saved from then on
 let g:session_autoload        = 'yes'
 let g:session_autosave        = 'yes'
-let g:session_default_to_last = 'yes'
+let g:session_default_to_last = 1
 let g:session_directory       = '~/tmp/vim/sessions'
 
 """"""""""""""""""""""""""""""""""
