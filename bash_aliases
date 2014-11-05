@@ -41,11 +41,15 @@ function hubsync()
 function pr(){
   browser=google-chrome
   delay=3
-  repo=`git remote -v | head -n1 | awk '{print $2}' | sed -e 's,.*:\(.*/\)\?,,' -e 's/\.git$//'`
-  owner=`git remote -v | grep upstream | head -n1 | awk '{print $2}' | sed -e 's,.*/\(.*\)/.*\.git$,\1,'`
+  origin=`git remote -v | grep origin | head -n1 | awk '{print $2}'`
+  repo=`echo $origin | sed -e 's,.*/\(.*\)\.git$,\1,'`
+  me=`echo $origin | sed -e 's,.*\.com[:/]\(.*\)/.*,\1,'`
+  upstream=`git remote -v | grep upstream | head -n1 | awk '{print $2}'`
+  server=`echo $upstream | sed -e 's,.*[@/]\(.*\)\.com.*,\1,'`
+  owner=`echo $upstream | sed -e 's,.*\.com[:/]\(.*\)/.*,\1,'`
   curbranch=`git rev-parse --abbrev-ref HEAD`
   if git push origin $curbranch; then
     sleep $delay
-    $browser "https://github.outboxtechnology.com/`whoami`/$repo/compare/$owner:$1...$curbranch?expand=1"
+    $browser "https://$server.com/$me/$repo/compare/$owner:$1...$curbranch?expand=1"
   fi
 }
