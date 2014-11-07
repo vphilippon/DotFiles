@@ -62,7 +62,6 @@ set switchbuf=usetab,newtab
 
 " NERDTree(Tab)
 map <Leader>m <plug>NERDTreeTabsToggle<CR>
-map <Leader>b <plug>NERDTreeSteppedClose<CR>
 
 " vim-session
 nnoremap <Leader>o :OpenSession<CR>
