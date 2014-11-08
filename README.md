@@ -14,7 +14,6 @@ Current track of dotfiles :
 To install, clone this repository into ~/.dotifiles and cd into it :
 
     git clone --recursive https://github.com/vphilippon/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
-    git submodule foreach -q --recursive 'branch="$(git config -f $toplevel/.gitmodules submodule.$name.branch)"; git checkout $branch'
 
 Don't forget to add the `--recursive` option to get all the submodules used for vim plugins.
 
@@ -22,7 +21,7 @@ Start the bash install script
 
     ./install.sh
 
-To add new submodule (with branch tracking), follow this:
+To add new submodule (with branch tracking), follow this: (Add branch trakcing)
   [http://stackoverflow.com/a/18799234](http://stackoverflow.com/a/18799234)
 
 Make sure you have:
