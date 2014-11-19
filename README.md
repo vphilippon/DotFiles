@@ -21,7 +21,7 @@ Start the bash install script
 
     ./install.sh
 
-To add new submodule (with branch tracking), follow this: (Add branch trakcing)
+To add new submodule (with branch tracking), follow this: (Add branch tracking)
   [http://stackoverflow.com/a/18799234](http://stackoverflow.com/a/18799234)
 
 Make sure you have:
