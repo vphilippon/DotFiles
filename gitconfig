@@ -46,6 +46,10 @@
 [merge]
   # Include summaries of merged commits in newly created merge commit messages
   log = true
+	tool = fugitive
 
 [push]
   default = simple
+
+[mergetool "fugitive"]
+	cmd = vim -f -c \"Gvdiff\" \"$MERGED\"
