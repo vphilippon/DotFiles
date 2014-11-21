@@ -46,6 +46,7 @@ Other interesting tools to have:
 * git-up (python with pip)
 * lnav
 * virtualenvwrapper
+* pyp
 
 ## Thanks to… (even if some don't know me)
 

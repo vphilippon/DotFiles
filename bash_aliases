@@ -11,6 +11,7 @@ alias cd.='cd ..'
 alias wb='workon bfox'
 alias wg='workon gitbuildhooks'
 alias wt='workon email-template'
+alias wp='workon tgpos'
 
 alias bfox_run='hserve.py -c ~/conf/bfox/bfox_prod_tst_vphilippon.conf'
 
