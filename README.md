@@ -48,9 +48,9 @@ Other interesting tools to have:
 * virtualenvwrapper
 * pyp
 
-## Thanks to… (even if some don't know me)
+## Thanks to:
 
 * [Nicolas Lupien](https://github.com/niclupien)
 * [Mathias Bynens](https://github.com/mathiasbynens)
-* [C-A Bouffard](https://github.com/cabouffard)
+* [Charles-André Bouffard](https://github.com/cabouffard)
 * [Val Markovic](https://github.com/Valloric)

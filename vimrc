@@ -127,8 +127,8 @@ set wildignore+=*.o,*.obj,.git,.svn,*.class,*.jasper,*.swp,*.pyc,target/*
 """"""""""""""""""""""""""""""""""
 " Set YouCompleteMe settings
 """"""""""""""""""""""""""""""""""
+let g:ycm_complete_in_comments = 1
 let g:ycm_add_preview_to_completeopt = 1
-let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_goto_buffer_command = 'new-tab'
 let g:ycm_extra_conf_globlist = ['~/Projects/*'] " Set to your owns if needed.
 
@@ -159,7 +159,8 @@ let g:NERDCustomDelimiters = {'python': {'left': '# ', 'leftAlt': '#'}}
 """"""""""""""""""""""""""""""""""
 let g:pymode_rope_completion = 0
 let g:pymode_folding = 0
-let g:pymode_lint_cwindow = 0
+let g:pymode_lint_on_write = 0
+let g:pymode_lint_cwindow = 1
 let g:pymode_trim_whitespaces = 0
 let g:pymode_options_max_line_length = 100  " Job setting
 let g:pymode_lint_ignore = "W391" " Job setting
