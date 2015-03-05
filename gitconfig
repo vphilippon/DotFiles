@@ -54,3 +54,5 @@
 
 [mergetool "fugitive"]
 	cmd = vim -f -c \"Gvdiff\" \"$MERGED\"
+	keepBackup = false
+
