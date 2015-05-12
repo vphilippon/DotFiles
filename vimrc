@@ -56,8 +56,6 @@ let g:mapleader = ","
 " Navigation
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
-nnoremap <F5> :sbprevious<CR>
-nnoremap <F6> :sbnext<CR>
 set switchbuf=usetab,newtab
 
 " NERDTree(Tab)
@@ -79,11 +77,15 @@ nnoremap <Leader>ig :IndentLinesToggle<CR>
 " python-mode
 nnoremap <Leader>u :PymodeLint<CR>
 
+" vim-colors-solarized
+call togglebg#map("<F5>")
+
 " Utilities
 set pastetoggle=<F2>
 nmap <silent> ,/ :nohlsearch<CR>
 nnoremap ; :
 inoremap jj <ESC>
+nnoremap <silent><leader>l :set rnu! rnu? <cr>
 
 """""""""""""""""""""""""""""
 " => Appearance options
@@ -91,11 +93,13 @@ inoremap jj <ESC>
 set background=dark
 se t_Co=16
 let g:solarized_termcolors=16
+let g:solarized_contrast="high"
 colorscheme solarized
 set number ruler
 set cursorline
 set antialias
 let g:Powerline_symbols='fancy'
+"let g:Powerline_stl_path_style='short'
 
 """""""""""""""""""""""""""""
 " => Text, tabs and indent
@@ -159,7 +163,7 @@ let g:NERDCustomDelimiters = {'python': {'left': '# ', 'leftAlt': '#'}}
 """"""""""""""""""""""""""""""""""
 let g:pymode_rope_completion = 0
 let g:pymode_folding = 0
-let g:pymode_lint_on_write = 1
+"let g:pymode_lint_on_write = 1
 let g:pymode_lint_cwindow = 1
 let g:pymode_trim_whitespaces = 0
 let g:pymode_options_max_line_length = 100  " Job setting
