@@ -1,6 +1,10 @@
 DotFiles
 ========
 
+
+For terminal-independant dotfiles (no bash / zsh specifics)
+
+
 My Dotfiles highly inspired of others Dotfiles, which were highly inspired of others Dotfiles, and so on.
 Lots of personnal setting you'll have to fix (directorys, git info, etc.).
 Be carefull if you intend to install it.
@@ -47,6 +51,7 @@ Other interesting tools to have:
 * lnav
 * virtualenvwrapper
 * pyp
+* guake && [coolwanglu/guake-colors-solarized](https://github.com/coolwanglu/guake-colors-solarized)
 
 ## Thanks to:
 
