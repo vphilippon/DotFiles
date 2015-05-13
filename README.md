@@ -2,9 +2,6 @@ DotFiles
 ========
 
 
-For terminal-independant dotfiles (no bash / zsh specifics)
-
-
 My Dotfiles highly inspired of others Dotfiles, which were highly inspired of others Dotfiles, and so on.
 Lots of personnal setting you'll have to fix (directorys, git info, etc.).
 Be carefull if you intend to install it.
@@ -13,6 +10,7 @@ Current track of dotfiles :
 * Vim
 * Git
 * Ghci (Haskell)
+* Bash
 
 
 To install, clone this repository into ~/.dotifiles and cd into it :
@@ -32,7 +30,7 @@ Make sure you have:
 -------------------
 * Vim 7.4 or greater with python support (YouCompleteMe)
 * A patched font for `fancy` powerline (vim-powerline)
-* The Solarized palette for your console emulator (vim-colors-solarized)
+* The Solarized palette for your console emulator, like [Anthony25/gnome-terminal-colors-solarized](https://github.com/Anthony25/gnome-terminal-colors-solarized) (vim-colors-solarized)
 * Ctags (taglist)
 * Cscope (cscope.vim)
 * ghc-mod (neco-ghc) (`cabal install ghc-mod`)
