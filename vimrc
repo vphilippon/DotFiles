@@ -163,7 +163,7 @@ let g:NERDCustomDelimiters = {'python': {'left': '# ', 'leftAlt': '#'}}
 """"""""""""""""""""""""""""""""""
 let g:pymode_rope_completion = 0
 let g:pymode_folding = 0
-"let g:pymode_lint_on_write = 1
+let g:pymode_lint_on_write = 0
 let g:pymode_lint_cwindow = 1
 let g:pymode_trim_whitespaces = 0
 let g:pymode_options_max_line_length = 100  " Job setting
