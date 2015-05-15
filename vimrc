@@ -37,6 +37,8 @@ set si                          " Smart indent
 set wildmenu                    " Show matching filenames with tab key
 set nobackup                    " no backup-files like bla~ 
 set nowritebackup 
+                                " Change swapfile directory
+set directory=~/tmp/vim/,.,/var/tmp,/tmp
 "set hidden                      " Hide buffer instead of closing it
 set tabpagemax=40               " Increade max number of tabs to 40
 set iskeyword+=_,$,@,%,#        " None of these should be word dividers
@@ -88,7 +90,7 @@ inoremap jj <ESC>
 nnoremap <silent><leader>l :set rnu! rnu? <cr>
 
 """""""""""""""""""""""""""""
-" => Appearance options
+" => Visual-Look options
 """""""""""""""""""""""""""""
 set background=dark
 se t_Co=16
@@ -125,8 +127,12 @@ set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
-
-set wildignore+=*.o,*.obj,.git,.svn,*.class,*.jasper,*.swp,*.pyc,target/*
+                                " Ignoring :
+set wildignore+=*.o,*.obj       " Objects files
+set wildignore+=.git,.svn       " Source control config
+set wildignore+=*.swp           " Vim swapfile
+set wildignore+=*.class,        " Java compiled / temps
+set wildignore+=*.pyc           " Python cached / temps
 
 """"""""""""""""""""""""""""""""""
 " Set YouCompleteMe settings
@@ -134,7 +140,7 @@ set wildignore+=*.o,*.obj,.git,.svn,*.class,*.jasper,*.swp,*.pyc,target/*
 let g:ycm_complete_in_comments = 1
 let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_goto_buffer_command = 'new-tab'
-let g:ycm_extra_conf_globlist = ['~/Projects/*'] " Set to your owns if needed.
+let g:ycm_extra_conf_globlist = ['~/Projects/*', '~/projects/*'] " Set to your owns if needed.
 
 """"""""""""""""""""""""""""""""""
 " Set vim-session settings
