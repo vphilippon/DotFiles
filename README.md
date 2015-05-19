@@ -23,17 +23,18 @@ Start the bash install script
 
     ./install.sh
 
-To add new submodule (with branch tracking), follow this: (Add branch tracking)
+To add new submodule (mostly for vim with pathogen) (with branch tracking), follow this: (Add branch tracking)
   [http://stackoverflow.com/a/18799234](http://stackoverflow.com/a/18799234)
 
 Make sure you have:
 -------------------
-* Vim 7.4 or greater with python support (YouCompleteMe)
-* A patched font for `fancy` powerline (vim-powerline)
-* The Solarized palette for your console emulator, like [Anthony25/gnome-terminal-colors-solarized](https://github.com/Anthony25/gnome-terminal-colors-solarized) (vim-colors-solarized)
-* Ctags (taglist)
-* Cscope (cscope.vim)
-* ghc-mod (neco-ghc) (`cabal install ghc-mod`)
+* Vim :
+  * Vim 7.4 or greater with python support (YouCompleteMe)
+  * A patched font for `fancy` powerline (see [Lokaltog/vim-powerline/fontpatcher](https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher)) (vim-powerline)
+  * The Solarized palette for your console emulator, like [Anthony25/gnome-terminal-colors-solarized](https://github.com/Anthony25/gnome-terminal-colors-solarized) (vim-colors-solarized)
+  * Ctags (taglist)
+  * Cscope (cscope.vim)
+  * ghc-mod (with `cabal install ghc-mod`) (neco-ghc)
 
 Notes:
 -----
