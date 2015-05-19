@@ -41,6 +41,11 @@ Notes:
 * Existing files will be moved with a .bk extension.
 * Existing symbolic links will be removed
 
+Plugin used:
+------------
+For a list of the plugin used see:
+* Vim: [vim/bundle](./vim/bundle)
+
 Other interesting tools to have:
 --------------------------------
 * tmux
