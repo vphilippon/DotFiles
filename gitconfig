@@ -21,8 +21,8 @@
   undopush = push -f origin HEAD^:master
 
 [core]
-	editor = vim
-	excludesfile = ~/.gitignore_global
+  editor = vim
+  excludesfile = ~/.gitignore_global
 
 [color]
   # Use colors in Git commands that are capable of colored output when outputting to the terminal
@@ -47,12 +47,12 @@
 [merge]
   # Include summaries of merged commits in newly created merge commit messages
   log = true
-	tool = fugitive
+  tool = fugitive
 
 [push]
   default = simple
 
 [mergetool "fugitive"]
-	cmd = vim -f -c \"Gvdiff\" \"$MERGED\"
-	keepBackup = false
+  cmd = vim -f -c \"Gvdiff\" \"$MERGED\"
+  keepBackup = false
 

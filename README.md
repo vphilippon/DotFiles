@@ -3,7 +3,7 @@ DotFiles
 
 
 My Dotfiles highly inspired of others Dotfiles, which were highly inspired of others Dotfiles, and so on.
-Lots of personnal setting you'll have to fix (directorys, git info, etc.).
+Lots of personnal setting you might have to fix (directories, git info, etc.).
 Be carefull if you intend to install it.
 
 Current track of dotfiles :
@@ -26,6 +26,10 @@ Start the bash install script
 To add new submodule (mostly for vim with pathogen) (with branch tracking), follow this: (Add branch tracking)
   [http://stackoverflow.com/a/18799234](http://stackoverflow.com/a/18799234)
 
+To update every submodule to their latest version (from remote), run
+
+    ./dotupdate.sh
+
 Make sure you have:
 -------------------
 * Vim :
@@ -36,16 +40,22 @@ Make sure you have:
   * Cscope (cscope.vim)
   * ghc-mod (with `cabal install ghc-mod`) (neco-ghc)
 
+To do after running the script:
+-----
+* Install/compile [Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe/tree/master)
+
 Notes:
 -----
 * Existing files will be moved with a .bk extension.
 * Existing symbolic links will be removed
 
-Plugin and feature used:
+Plugins and settings used:
 ------------
-For a list of the plugin used see:
-* Vim: [vim/bundle](./vim/bundle)
-* Git: TODO
+For a list of the plugins and settings used, see:
+* Vim: [vimrc](./vimrc), [vim/bundle](./vim/bundle)
+* Git: [gitconfig](./gitconfig), [gitignore_global](./gitignore_global)
+* Ghci: [ghci](./ghci)
+* Bash: [bash_aliases](./bash_aliases)
 
 Other interesting tools to have:
 --------------------------------
