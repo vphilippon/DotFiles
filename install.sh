@@ -25,7 +25,7 @@ create_link() {
 
 for f in ~/.dotfiles/*
 do
-  if [[ $f != *install.sh && $f != *README.md ]] 
+  if [[ $f != *install.sh && $f != *README.md && $f != *dotupdate.sh ]] 
   then
     create_link $f "$HOME/.${f##*/}" 
   fi
