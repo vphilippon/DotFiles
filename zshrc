@@ -27,7 +27,15 @@ source ~/.zsh/zsh_functions
 
 
 # -- Antigen config line by vphilippon --
-#source ~/.zsh/antigen/antigen.zsh 
+# Load Antigen
+source ~/.zsh/antigen/antigen.zsh 
 
+# Load oh-my-zsh lib
+antigen use oh-my-zsh
 
+# Load an awesome theme
+antigen theme crunch
+ 
+# Load those awesome plugins
+antigen bundle zsh-users/zsh-syntax-highlighting 
 
