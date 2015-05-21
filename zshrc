@@ -7,12 +7,14 @@ bindkey -e
 # The following lines were added by compinstall
 zstyle :compinstall filename '~/.zshrc'
 
+# add custom completion scripts --> vphilippon
+fpath=(~/.zsh/completion $fpath)
+
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
 # -- Personnal misc config line by vphilippon --
-
 # Source virtualenvwrapper.sh if it exists
 if [[ -e "/usr/share/virtualenvwrapper/virtualenvwrapper.sh" ]];
 then

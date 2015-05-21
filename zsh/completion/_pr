@@ -1,0 +1,10 @@
+#compdef pr
+
+# List remote branch | Keep only after '->' | Keep only after '/' and rtrim whitespaces
+branch=`git branch -r | sed -e 's,.*->\(.*\)$,\1,' | sed -e 's,.*/\(.*\)[ \t]*$,\1,'`
+# TODO List branch only of the current branch 'remote' (.git/config)
+
+# OLD : List local branch | Remove '*' | Remove whitespaces
+#branch=`git branch | sed -e 's,\*,,' | sed -e 's,[ \t]*,,'`
+
+_arguments "1: :($branch)"
