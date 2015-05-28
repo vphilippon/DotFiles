@@ -60,8 +60,11 @@ map <F7> :tabp<CR>
 map <F8> :tabn<CR>
 set switchbuf=usetab,newtab
 
+" NERDTree
+map <Leader>m :NERDTreeToggle<CR>
+
 " NERDTree(Tab)
-map <Leader>m <plug>NERDTreeTabsToggle<CR>
+map <Leader>am <plug>NERDTreeTabsToggle<CR>
 
 " vim-session
 nnoremap <Leader>o :OpenSession<CR>
@@ -129,9 +132,8 @@ set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
                                 " Ignoring :
 set wildignore+=*.o,*.obj       " Objects files
-set wildignore+=.git,.svn       " Source control config
 set wildignore+=*.swp           " Vim swapfile
-set wildignore+=*.class,        " Java compiled / temps
+set wildignore+=*.class         " Java compiled / temps
 set wildignore+=*.pyc           " Python cached / temps
 
 """"""""""""""""""""""""""""""""""
@@ -159,6 +161,12 @@ let g:Tlist_Close_On_Select=1
 let g:Tlist_Exit_OnlyWindow=1
 let g:Tlist_GainFocus_On_ToggleOpen=1
 
+
+""""""""""""""""""""""""""""""""""
+" Set NERDTree settings
+""""""""""""""""""""""""""""""""""
+let g:NERDTreeQuitOnOpen=1
+
 """"""""""""""""""""""""""""""""""
 " Set NERDCommenter settings
 """"""""""""""""""""""""""""""""""
@@ -173,8 +181,9 @@ let g:pymode_lint_on_write = 0
 let g:pymode_lint_cwindow = 1
 let g:pymode_trim_whitespaces = 0
 let g:pymode_options_max_line_length = 100  " Job setting
-let g:pymode_lint_ignore = "W391" " Job setting
-" W391 : Blank line at end of file
+let g:pymode_lint_ignore = "W391,E701" " Job setting
+" W391: Blank line at end of file
+" E701: Multiple statements on one line
 
 """"""""""""""""""""""""""""""""""
 " Set indentLine settings
