@@ -61,7 +61,7 @@ map <F8> :tabn<CR>
 set switchbuf=usetab,newtab
 
 " NERDTree
-map <Leader>m :NERDTreeToggle<CR>
+map <Leader>m :NERDTreeMirrorToggle<CR>
 
 " NERDTree(Tab)
 map <Leader>am <plug>NERDTreeTabsToggle<CR>
