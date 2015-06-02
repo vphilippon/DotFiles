@@ -39,6 +39,7 @@ antigen use oh-my-zsh
 antigen theme crunch
  
 # Load those awesome plugins
+antigen bundle gitfast
 antigen bundle zsh-users/zsh-syntax-highlighting 
 
 # Tell antigen that you're done.

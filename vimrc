@@ -39,7 +39,7 @@ set nobackup                    " no backup-files like bla~
 set nowritebackup 
                                 " Change swapfile directory
 set directory=~/tmp/vim/,.,/var/tmp,/tmp
-"set hidden                      " Hide buffer instead of closing it
+set hidden                      " Hide buffer instead of closing it
 set tabpagemax=40               " Increade max number of tabs to 40
 set iskeyword+=_,$,@,%,#        " None of these should be word dividers
 
@@ -61,10 +61,11 @@ map <F8> :tabn<CR>
 set switchbuf=usetab,newtab
 
 " NERDTree
-map <Leader>m :NERDTreeMirrorToggle<CR>
+"map <Leader>m :NERDTreeMirrorToggle<CR>
 
 " NERDTree(Tab)
-map <Leader>am <plug>NERDTreeTabsToggle<CR>
+"map <Leader>am <plug>NERDTreeTabsToggle<CR>
+map <Leader>m <plug>NERDTreeTabsToggle<CR>
 
 " vim-session
 nnoremap <Leader>o :OpenSession<CR>
@@ -165,7 +166,7 @@ let g:Tlist_GainFocus_On_ToggleOpen=1
 """"""""""""""""""""""""""""""""""
 " Set NERDTree settings
 """"""""""""""""""""""""""""""""""
-let g:NERDTreeQuitOnOpen=1
+"let g:NERDTreeQuitOnOpen=1
 
 """"""""""""""""""""""""""""""""""
 " Set NERDCommenter settings
