@@ -73,6 +73,7 @@ nnoremap <Leader>o :OpenSession<CR>
 " YouCompleteMe
 nnoremap <Leader>y :YcmForceCompileAndDiagnostics<CR>
 noremap <Leader>jd :YcmCompleter GoTo<CR>
+noremap <Leader>js :YcmCompleter GoToDeclaration<CR>
 
 " taglist
 map <Leader>n :TlistToggle<CR>
