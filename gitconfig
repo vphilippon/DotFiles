@@ -13,10 +13,12 @@
   p = !"git pull; git submodule foreach git pull origin master"
   # Clone a repository including all submodules
   c = clone --recursive
-  # Commit all changes
+  # Commit all changes verbosely
   ca = !git add -A && git commit -av
+  # Commit staged changes, verbosely
+  cv = commit -v
   # Checkout
-  co = !git checkout
+  co = checkout
   # Credit an author on the latest commit
   credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
   # Undo a `git push`
@@ -46,13 +48,19 @@
   changed = green
   untracked = cyan
 
+[push]
+  default = simple
+
+[rebase]
+  autosquash = true
+
+[branch]
+  autosetupmerge = true
+
 [merge]
   # Include summaries of merged commits in newly created merge commit messages
   log = true
   tool = fugitive
-
-[push]
-  default = simple
 
 [mergetool "fugitive"]
   cmd = vim -f -c \"Gvdiff\" \"$MERGED\"
