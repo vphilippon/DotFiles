@@ -55,7 +55,7 @@
   autosquash = true
 
 [branch]
-  autosetupmerge = true
+  autosetupmerge = always
 
 [merge]
   # Include summaries of merged commits in newly created merge commit messages
