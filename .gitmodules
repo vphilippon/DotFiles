@@ -10,7 +10,7 @@
 	path = vim/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
 	branch = master
-  ignore = dirty   ;No more untracked...
+	ignore = dirty   ;No more untracked...
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
@@ -51,12 +51,12 @@
 	path = vim/bundle/ingo-library
 	url = https://github.com/vim-scripts/ingo-library.git
 	branch = master
-  ignore = dirty   ;No more untracked...
+	ignore = dirty   ;No more untracked...
 [submodule "vim/bundle/EnhancedJumps"]
 	path = vim/bundle/EnhancedJumps
 	url = https://github.com/vim-scripts/EnhancedJumps.git
 	branch = master
-  ignore = dirty   ;No more untracked...
+	ignore = dirty   ;No more untracked...
 [submodule "vim/bundle/python-mode"]
 	path = vim/bundle/python-mode
 	url = https://github.com/vphilippon/python-mode.git
