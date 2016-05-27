@@ -42,6 +42,7 @@ set directory=~/tmp/vim/,.,/var/tmp,/tmp
 set hidden                      " Hide buffer instead of closing it
 set tabpagemax=40               " Increade max number of tabs to 40
 set iskeyword+=_,$,@,%,#        " None of these should be word dividers
+set vb                          " Silence bell
 
 """"""""""""""""""""""""""""""""""
 " Set color on the line at pos 80
