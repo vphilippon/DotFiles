@@ -16,7 +16,7 @@ Current track of dotfiles :
 
 To install, clone this repository into ~/.dotifiles and cd into it :
 
-    git clone --recursive https://github.com/vphilippon/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
+    git clone --recursive git@github.com:vphilippon/DotFiles.git ~/.dotfiles && cd ~/.dotfiles
 
 Don't forget to add the `--recursive` option to get all the submodules used for vim plugins.
 
