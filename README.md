@@ -11,7 +11,6 @@ Current track of dotfiles :
 * Git
 * Ghci (Haskell)
 * Bash
-* Zsh
 
 
 To install, clone this repository into ~/.dotifiles and cd into it :
@@ -42,13 +41,10 @@ Make sure you have:
   * Ctags (taglist)
   * Cscope (cscope.vim)
   * ghc-mod (with `cabal install ghc-mod`) (neco-ghc)
-* Zsh :
-  * Zsh 4.3.9 or greater (Antigen && oh-my-zsh)
 
 To do after running the script:
 -------------------------------
 * Install/compile [Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe/tree/master)
-* Make Zsh your main login shell (using chsh)
 
 Notes:
 ------
@@ -59,7 +55,6 @@ Managing plugins:
 -----------------
 * Vim: Add plugin as git-submodule in [vim/bundle/](./vim/bundle) (managed by [tpope/vim-pathogen](https://github.com/tpope/vim-pathogen)).
 * Bash: None yet, only config files symlinked.
-* Zsh: Use the `antigen bundle` or `antigen theme` command in [zshrc](./zshrc) (managed by [zsh-users/antigen](https://github.com/zsh-users/antigen)).
 
 Plugins and settings used:
 --------------------------
@@ -68,7 +63,6 @@ For a list of the plugins and settings used, see:
 * Git: [gitconfig](./gitconfig), [gitignore_global](./gitignore_global)
 * Ghci: [ghci](./ghci)
 * Bash: [bash_aliases](./bash_aliases)
-* Zsh: [zshrc](./zshrc), [zsh/](./zsh)
 
 Other interesting tools to have:
 --------------------------------
