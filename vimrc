@@ -56,9 +56,6 @@ map <Leader>m <plug>NERDTreeTabsToggle<CR>
 " indentLine
 nnoremap <Leader>ig :IndentLinesToggle<CR>
 
-" python-mode
-nnoremap <Leader>u :PymodeLint<CR>
-
 " vim-colors-solarized
 call togglebg#map("<F5>")
 
@@ -122,20 +119,6 @@ set wildignore+=*.pyc           " Python cached / temps
 " Set NERDCommenter settings
 """"""""""""""""""""""""""""""""""
 let g:NERDCustomDelimiters = {'python': {'left': '# ', 'leftAlt': '#'}}
-
-""""""""""""""""""""""""""""""""""
-" Set python-mode settings
-""""""""""""""""""""""""""""""""""
-let g:pymode_rope_completion = 0
-let g:pymode_folding = 0
-let g:pymode_lint_on_write = 0
-let g:pymode_lint_cwindow = 1
-let g:pymode_trim_whitespaces = 0
-let g:pymode_options_max_line_length = 100  " Job setting
-let g:pymode_lint_ignore = "W391,E701,E731" " Job setting
-" W391: Blank line at end of file
-" E701: Multiple statements on one line
-" E731: Do not assign a lambda expression, use a def
 
 """"""""""""""""""""""""""""""""""
 " Set indentLine settings

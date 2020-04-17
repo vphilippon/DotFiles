@@ -36,7 +36,3 @@
 	url = https://github.com/vim-scripts/EnhancedJumps.git
 	branch = master
 	ignore = dirty   ;No more untracked...
-[submodule "vim/bundle/python-mode"]
-	path = vim/bundle/python-mode
-	url = https://github.com/vphilippon/python-mode.git
-	branch = develop

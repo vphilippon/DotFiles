@@ -1,6 +1,3 @@
 # Vim
 *.swp
 *~
-
-# Python-Mode
-.ropeproject
