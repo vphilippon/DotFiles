@@ -71,13 +71,13 @@ nnoremap <silent><leader>l :set rnu! rnu? <cr>
 """""""""""""""""""""""""""""
 set background=dark
 se t_Co=16
-let g:solarized_termcolors=16
-let g:solarized_contrast="high"
-colorscheme solarized
+"let g:solarized_termcolors=16
+"let g:solarized_contrast="high"
+"colorscheme solarized
 set number ruler
 set cursorline
 set antialias
-let g:Powerline_symbols='fancy'
+"let g:Powerline_symbols='fancy'
 "let g:Powerline_stl_path_style='short'
 
 """""""""""""""""""""""""""""
