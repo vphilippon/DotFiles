@@ -53,9 +53,6 @@ set switchbuf=usetab,newtab
 "map <Leader>am <plug>NERDTreeTabsToggle<CR>
 map <Leader>m <plug>NERDTreeTabsToggle<CR>
 
-" vim-session
-nnoremap <Leader>o :OpenSession<CR>
-
 " indentLine
 nnoremap <Leader>ig :IndentLinesToggle<CR>
 
@@ -115,16 +112,6 @@ set wildignore+=*.o,*.obj       " Objects files
 set wildignore+=*.swp           " Vim swapfile
 set wildignore+=*.class         " Java compiled / temps
 set wildignore+=*.pyc           " Python cached / temps
-
-""""""""""""""""""""""""""""""""""
-" Set vim-session settings
-""""""""""""""""""""""""""""""""""
-" you also need to run :SaveSession once to create the default.vim session that
-" will then be autoloaded/saved from then on
-let g:session_autoload        = 'yes'
-let g:session_autosave        = 'yes'
-let g:session_default_to_last = 1
-let g:session_directory       = '~/tmp/vim/sessions'
 
 """"""""""""""""""""""""""""""""""
 " Set NERDTree settings
