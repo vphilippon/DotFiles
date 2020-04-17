@@ -48,7 +48,3 @@
 	path = vim/bundle/python-mode
 	url = https://github.com/vphilippon/python-mode.git
 	branch = develop
-[submodule "vim/bundle/CamelCaseMotion"]
-	path = vim/bundle/CamelCaseMotion
-	url = https://github.com/bkad/CamelCaseMotion.git
-	branch = master
