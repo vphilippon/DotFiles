@@ -26,10 +26,6 @@
 	path = vim/bundle/vim-session
 	url = https://github.com/xolox/vim-session.git
 	branch = master
-[submodule "vim/bundle/cscope"]
-	path = vim/bundle/cscope
-	url = https://github.com/brookhong/cscope.vim.git
-	branch = master
 [submodule "vim/bundle/vim-fugitive"]
 	path = vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git

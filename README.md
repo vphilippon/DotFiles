@@ -37,7 +37,6 @@ Make sure you have:
   * A patched font for `fancy` powerline (see [Lokaltog/vim-powerline/fontpatcher](https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher)) (vim-powerline)
   * The Solarized palette for your console emulator, like [Anthony25/gnome-terminal-colors-solarized](https://github.com/Anthony25/gnome-terminal-colors-solarized) (vim-colors-solarized)
   * Ctags (taglist)
-  * Cscope (cscope.vim)
 
 To do after running the script:
 -------------------------------
