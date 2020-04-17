@@ -56,9 +56,6 @@ map <Leader>m <plug>NERDTreeTabsToggle<CR>
 " vim-session
 nnoremap <Leader>o :OpenSession<CR>
 
-" taglist
-map <Leader>n :TlistToggle<CR>
-
 " indentLine
 nnoremap <Leader>ig :IndentLinesToggle<CR>
 
@@ -128,14 +125,6 @@ let g:session_autoload        = 'yes'
 let g:session_autosave        = 'yes'
 let g:session_default_to_last = 1
 let g:session_directory       = '~/tmp/vim/sessions'
-
-""""""""""""""""""""""""""""""""""
-" Set taglist settings
-""""""""""""""""""""""""""""""""""
-let g:Tlist_Close_On_Select=1
-let g:Tlist_Exit_OnlyWindow=1
-let g:Tlist_GainFocus_On_ToggleOpen=1
-
 
 """"""""""""""""""""""""""""""""""
 " Set NERDTree settings
