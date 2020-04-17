@@ -9,7 +9,6 @@ Be carefull if you intend to install it.
 Current track of dotfiles :
 * Vim
 * Git
-* Ghci (Haskell)
 * Bash
 
 
@@ -40,7 +39,6 @@ Make sure you have:
   * The Solarized palette for your console emulator, like [Anthony25/gnome-terminal-colors-solarized](https://github.com/Anthony25/gnome-terminal-colors-solarized) (vim-colors-solarized)
   * Ctags (taglist)
   * Cscope (cscope.vim)
-  * ghc-mod (with `cabal install ghc-mod`) (neco-ghc)
 
 To do after running the script:
 -------------------------------
@@ -61,7 +59,6 @@ Plugins and settings used:
 For a list of the plugins and settings used, see:
 * Vim: [vimrc](./vimrc), [vim/bundle/](./vim/bundle)
 * Git: [gitconfig](./gitconfig), [gitignore_global](./gitignore_global)
-* Ghci: [ghci](./ghci)
 * Bash: [bash_aliases](./bash_aliases)
 
 Other interesting tools to have:

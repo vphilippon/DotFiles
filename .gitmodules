@@ -31,10 +31,6 @@
 	path = vim/bundle/vim-session
 	url = https://github.com/xolox/vim-session.git
 	branch = master
-[submodule "vim/bundle/neco-ghc"]
-	path = vim/bundle/neco-ghc
-	url = https://github.com/eagletmt/neco-ghc.git
-	branch = master
 [submodule "vim/bundle/cscope"]
 	path = vim/bundle/cscope
 	url = https://github.com/brookhong/cscope.vim.git
