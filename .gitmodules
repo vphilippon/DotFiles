@@ -31,8 +31,3 @@
 	url = https://github.com/vim-scripts/ingo-library.git
 	branch = master
 	ignore = dirty   ;No more untracked...
-[submodule "vim/bundle/EnhancedJumps"]
-	path = vim/bundle/EnhancedJumps
-	url = https://github.com/vim-scripts/EnhancedJumps.git
-	branch = master
-	ignore = dirty   ;No more untracked...
