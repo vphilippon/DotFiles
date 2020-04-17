@@ -154,11 +154,3 @@ let g:pymode_lint_ignore = "W391,E701,E731" " Job setting
 " Set indentLine settings
 """"""""""""""""""""""""""""""""""
 let g:indentLine_char = '┊'
-
-""""""""""""""""""""""""""""""""""
-" Set UltiSnips settings
-""""""""""""""""""""""""""""""""""
-let g:UltiSnipsExpandTrigger="<c-j>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-
