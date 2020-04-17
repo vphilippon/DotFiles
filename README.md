@@ -34,7 +34,6 @@ To update every submodule to their latest version (from remote), run
 Make sure you have:
 -------------------
 * Vim :
-  * Vim 7.4 or greater with python support (YouCompleteMe)
   * A patched font for `fancy` powerline (see [Lokaltog/vim-powerline/fontpatcher](https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher)) (vim-powerline)
   * The Solarized palette for your console emulator, like [Anthony25/gnome-terminal-colors-solarized](https://github.com/Anthony25/gnome-terminal-colors-solarized) (vim-colors-solarized)
   * Ctags (taglist)
@@ -42,7 +41,7 @@ Make sure you have:
 
 To do after running the script:
 -------------------------------
-* Install/compile [Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe/tree/master)
+* As of now, nothing :)
 
 Notes:
 ------

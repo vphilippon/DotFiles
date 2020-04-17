@@ -1,18 +1,3 @@
-"""""""""""""""""""
-" => Version check
-"""""""""""""""""""
-if v:version >= 704
-  " Not sure it's fixing, but I'll see over time...Thanks Valoric!
-  " The new Vim regex engine is currently slooooow as hell which makes syntax
-  " highlighting slow, which introduces typing latency.
-  " Consider removing this in the future when the new regex engine becomes
-  " faster.
-  set regexpengine=1
-else
-  " Disable YCM if we don't have Vim 7.4 or greater.
-  let g:pathogen_disabled=['YouCompleteMe']
-endif
-
 " Pathogen calls -- Plugin loading
 call pathogen#infect()
 call pathogen#helptags()
@@ -70,11 +55,6 @@ map <Leader>m <plug>NERDTreeTabsToggle<CR>
 
 " vim-session
 nnoremap <Leader>o :OpenSession<CR>
-
-" YouCompleteMe
-nnoremap <Leader>y :YcmForceCompileAndDiagnostics<CR>
-noremap <Leader>jd :YcmCompleter GoTo<CR>
-noremap <Leader>js :YcmCompleter GoToDeclaration<CR>
 
 " taglist
 map <Leader>n :TlistToggle<CR>
@@ -138,14 +118,6 @@ set wildignore+=*.o,*.obj       " Objects files
 set wildignore+=*.swp           " Vim swapfile
 set wildignore+=*.class         " Java compiled / temps
 set wildignore+=*.pyc           " Python cached / temps
-
-""""""""""""""""""""""""""""""""""
-" Set YouCompleteMe settings
-""""""""""""""""""""""""""""""""""
-let g:ycm_complete_in_comments = 1
-let g:ycm_add_preview_to_completeopt = 1
-let g:ycm_goto_buffer_command = 'new-tab'
-let g:ycm_extra_conf_globlist = ['~/Projects/*', '~/projects/*'] " Set to your owns if needed.
 
 """"""""""""""""""""""""""""""""""
 " Set vim-session settings
