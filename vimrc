@@ -113,7 +113,7 @@ set wildignore+=*.pyc           " Python cached / temps
 """"""""""""""""""""""""""""""""""
 " Set NERDTree settings
 """"""""""""""""""""""""""""""""""
-"let g:NERDTreeQuitOnOpen=1
+let g:NERDTreeQuitOnOpen=1
 
 """"""""""""""""""""""""""""""""""
 " Set NERDCommenter settings
