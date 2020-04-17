@@ -1,0 +1,7 @@
+# Readline configurations (use by bash, for instance).
+# Edited by vphilippon
+# Ref: 
+# https://ss64.com/bash/syntax-inputrc.html
+# https://linuxfr.org/users/perdu/journaux/faire-de-la-magie-avec-son-inputrc
+
+set bell-style none

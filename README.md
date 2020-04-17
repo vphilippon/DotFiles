@@ -56,7 +56,7 @@ Plugins and settings used:
 For a list of the plugins and settings used, see:
 * Vim: [vimrc](./vimrc), [vim/bundle/](./vim/bundle)
 * Git: [gitconfig](./gitconfig), [gitignore_global](./gitignore_global)
-* Bash: [bash_aliases](./bash_aliases)
+* Bash: [bash_aliases](./bash_aliases), [inputrc](./inputrc)
 
 Other interesting tools to have:
 --------------------------------
