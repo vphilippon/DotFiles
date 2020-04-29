@@ -19,6 +19,8 @@
   cv = commit -v
   # Checkout
   co = checkout
+  # Clean, exclude .gitignore_global content
+  clear = !"IFS=$'\n'; git clean -dfx $(for line in $(cat ~/.gitignore_global); do echo --exclude=$line; done)"
 
 [core]
   editor = vim
