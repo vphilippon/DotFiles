@@ -1,3 +1,11 @@
 # Vim
 *.swp
 *~
+
+# VS Code
+.vscode/
+.devcontainer/
+*.code-workspace
+
+# Env file
+.env
