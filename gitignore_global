@@ -9,3 +9,7 @@
 
 # Env file
 .env
+
+# C# .NET
+dotnetapi.runsettings
+
